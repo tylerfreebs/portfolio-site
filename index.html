@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tyler's Programming Portfolio</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="menu.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nixie+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#title">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="intro"> 
+      <header class="title" id="title">
+        <h1>Hello! My name is Tyler</h1>
+        <h2>I'm a full-stack web developer with an eye for detailed programming.</h2>
+      </header>
+
+      <section class="bio" id="aboutMe">
+        <h2 class="bioTitle">About Me</h2>
+        <p class="bioParaOne">
+          I am a web developer and recent graduate of the Web Development Track Bootcamp at Bloc and a Penn State University Alum.
+          I enjoy coding because I thoroughly enjoy creating detailed and reliable programs that solve problems and help others.
+          I have always thought of programming as a puzzle, in the manner of how can I make this program useful and efficient to the
+          users.
+        </p>
+        <p class="bioParaTwo">
+          When I am not thinking about my next project, you can find me at a local venue for live music, at the arena watching a
+         great game of hockey, or reading some fan theories on Marvel and Star Wars movies and shows. I spend a lot of time learning
+          new technology and have found a passion for learning more about cloud computing and application development.
+        </p>
+      </section>
+    </section>
+
+    <section class="projects" id="portfolio">
+      <h2 class="projTitle">Portfolio</h2>
+      <div id="projectOne">
+        <h3 class="projName">Hockey Quiz App!</h3>
+        <img id="hockeyQuizApp" src="Images/hockey-quiz-app-snap.jpg" alt="snapshot of hockey quiz app">
+        <div class="projResources">
+            <a class="links" href="https://github.com/tylerfreebs/hockey-quiz-app" target="_blank">Repo</a>
+            <a class="links" href="https://tylerfreebs.github.io/hockey-quiz-app/" target="_blank">Live Site</a>
+        </div><br>
+        <div class="techDescrip">
+          Technologies used: JavaScript, jQuery, HTML, CSS.
+        </div><br>
+        <div class="projDescrip">
+          In the development of the Hockey Quiz App I wanted to test the user's knowledge of some basic hockey
+          facts. I used HTML as a container for the structure of the application and CSS for styling the application to meet the user's needs on either mobile devices or larger screens. The application uses
+          JavaScript to set the questions from a local storage area and grade the user answers in an efficient if/else statement. The user gets immediate feedback once the answer is submitted to the grading function.
+        </div>
+      </div>
+      <div id="projectTwo">
+        <h3 class="projName">Metal Discovery App!</h3>
+        <img id="metalDiscoveryApp" src="Images/metal-discovery-app2.jpg" alt="snapshot of metal discovery app">
+        <div class="projResources">
+            <a class="links" href="https://github.com/tylerfreebs/metal-api-capstone" target="_blank">Repo</a>
+            <a class="links" href="https://tylerfreebs.github.io/metal-api-capstone/" target="_blank">Live Site</a>
+        </div><br>
+        <div class="techDescrip">
+          Technologies used: JavaScript, jQuery, HTML, CSS.
+        </div><br>
+        <div class="projDescrip">
+          The idea behind this application was to create a way for users to broaden their taste in metal music or to learn about a specific subgenre that they have never really listened to.
+          I used HTML as a container for the structure of the application and CSS for styling the application to meet the user's needs on either mobile devices or larger screens. The application uses
+          JavaScript and jQuery to search for what the user has either pressed or searched for. The user gets immediate feedback once the fetch has been complete and displays the results to the user.
+          The user recieves information on the genre or band and YouTube videos to watch and listen to.
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contactMe">
+      <h2 class="conTitle">Contact Me</h2>
+      <address>
+        Tyler Freebery<br>
+        Web Developer<br>
+        New Castle, DE<br>
+        <a class="info" href="mailto:tyler.freebery@gmail.com" target="_blank">tyler.freebery@gmail.com</a><br>
+        <a class="info" href="tel:+13026689883" target="_blank">(302) 668-9883</a><br><br><br>
+        <a class="info" href="https://github.com/thedudefreebird" target="_blank"><img class="social" src="Images/github-logo.png" alt="github logo"></a>
+        <a class="info" href="www.linkedin.com/in/tyler-freebery21" target="_blank"><img class="social" src="Images/linkedIn-logo.png" alt="linkedin logo"></a><br><br>
+      </address>
+    </section>
+
+
+  </main>
+</body>
