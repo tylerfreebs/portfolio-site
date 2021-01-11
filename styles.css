@@ -1,317 +1,393 @@
-:root {
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(24, 39, 51, 0.85);
-    --menu-speed: 0.75s;
-  }
-  
-  * {
+* {
     box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #0B0C10;
-    background-image: url('Images/work-desk.jpg');
+}
+
+body {
+    background-color: #ffffff;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    line-height: 1.5;
-  }
-  
-  a {
+    line-height: 1.25;
+}
+
+a {
     font-size: 16px;
-    font-family: 'Libre Baskerville', serif;
-  }
-  
-  a:hover {
-    color: #E1E2E2;
-  }
-  
-  .title {
-    color: #E1E2E2;
-    font-family: 'Nixie One', cursive;
-    text-align: center;
-    font-size: 35px;
-    margin-top: 85px;
-  }
-  
-  .title > h2 {
-    font-size: 32.5px;
-    line-height: 35px;
-  }
-  
-  .bioTitle {
-    font-family: 'Nixie One', cursive;
-    color: #66FCF1;
-    text-align: center;
-    font-size: 35px;
-    text-decoration: underline;
-    margin-top: 100px;
-  }
-  
-  .bioParaOne, .bioParaTwo {
-    font-family: 'Libre Baskerville', serif;
-    color: #E1E2E2;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    color: #ff715b;
+}
+
+.title {
+    color: #242423;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 28px;
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 2px;
     padding-right: 2px;
-    font-size: 20px;
+}
+
+.title > h2 {
+    font-size: 26px;
+    line-height: 25px;
+    margin-bottom: 85px;
+}
+
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+}
+
+.bioParaOne {
+    font-family: 'Roboto', sans-serif;
+    color: #242423;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 22px;
     line-height: 30px;
-  }
-  
-  
-  #projectOne{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #projectTwo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .projTitle {
-    font-family: 'Nixie One', cursive;
-    color: #66FCF1;
+    width: 75%;
+    margin-top: 50px;
     text-align: center;
-    font-size: 35px;
+}
+
+#proj_one_button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+#viewMoreOne-btn{
+    border-radius: 8px;
+    background-color: #333533;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    
+}
+
+#viewMoreOne-btn:hover{
+    border-radius: 8px;
+    background-color: #333533;
+    color: #ff715b;
+    
+}
+
+#viewLessOne-btn{
+    border-radius: 8px;
+    background-color: #333533;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+#viewLessOne-btn:hover{
+    border-radius: 8px;
+    background-color: #333533;
+    color: #ff715b;
+    
+}
+
+#projectOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#proj_two_button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#viewMoreTwo-btn{
+    border-radius: 8px;
+    background-color: #333533;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    
+}
+
+#viewMoreTwo-btn:hover{
+    border-radius: 8px;
+    background-color: #333533;
+    color: #ff715b;
+    
+}
+
+#viewLessTwo-btn{
+    border-radius: 12px;
+    background-color: #333533;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+#viewLessTwo-btn:hover{
+    border-radius: 12px;
+    background-color: #333533;
+    color: #ff715b;
+    
+}
+
+#projectTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projTitle {
+    font-family: 'Lato', sans-serif;
+    color: #333533;
+    text-align: center;
+    font-size: 30px;
     text-decoration: underline;
     margin-top: 100px;
-  }
-  
-  .projName{
-    font-family: 'Libre Baskerville', serif;
-    color: #E1E2E2;
+}
+
+.projName{
+    font-family: 'Lato', sans-serif;
+    color: #242423;
     padding-left: 2px;
     padding-right: 2px;
     text-align: center;
     font-size: 25px;
-  }
-  
-  #hockeyQuizApp {
+}
+
+#hockeyQuizApp {
     display: flex;
     justify-content: center;
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 200px;
     padding-left: 2px;
     padding-right: 2px;
-  }
-  
-  #metalDiscoveryApp {
+}
+
+#metalDiscoveryApp {
     display: flex;
     justify-content: center;
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 200px;
     padding-left: 2px;
     padding-right: 2px;
-  }
-  
-  .links{
-    color: #66FCF1;
+}
+
+.links {
+    color: #7CA29E;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
     font-size: 20px;
-  }
-  
-  
-  .techDescrip {
-    font-family: 'Libre Baskerville', serif;
-    color: #66FCF1;
+}
+
+.techDescrip {
+    font-family: 'Lato', sans-serif;
+    color: #333533;
     padding-left: 2px;
     padding-right: 2px;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
-  }
-  
-  .projDescrip {
-    font-family: 'Libre Baskerville', serif;
-    color: #E1E2E2;
+}
+
+.projDescripOne {
+    font-family: 'Roboto', sans-serif;
+    color: #242423;
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 2px;
     padding-right: 2px;
     font-size: 20px;
     line-height: 30px;
-  }
-  
-  .contact{
-    font-family: 'Nixie One', cursive;
-    color: #66FCF1;
-    text-align: center;
-    font-size: 25px;
+}
+.projDescripTwo {
+    font-family: 'Roboto', sans-serif;
+    color: #242423;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contact{
+    background-color: #778899;
+    font-size: 20px;
     text-decoration: underline;
     margin-top: 200px;
-  }
-  
-  .info {
-    font-family: 'Libre Baskerville', serif;
-    color: #66FCF1;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.info {
+    font-family: 'Lato', sans-serif;
+    color: #191970;
     text-align: center;
     font-size: 20px;
-  }
-  
-  .social {
+}
+
+
+.social {
     height: 50px;
     width: 55px;
     margin-right: 20px;
-    background-color: #45A29E;
+    background-color: #ffffff;
     margin-top: -20px;
     text-decoration: none;
-  }
-  
-  
-  
-  @media only screen and (max-width: 767px) {
-  
-    body{
-      background-image: url('Images/work-desk.jpg');
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+  body{
+      /*background-image: url('Images/work-desk.jpg');*/
       background-position: center left;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
       line-height: 1.5;
-    }
-  
-    .title {
-      color: #E1E2E2;
-      font-family: 'Nixie One', cursive;
+  }
+
+  .title {
+      color: #000000;
+      font-family: 'Lato', sans-serif;
       text-align: center;
       font-size: 26px;
-    }
-  
-    .title > h2 {
+  }
+
+  .title > h2 {
       font-size: 20px;
       line-height: 24px;
-    }
-  
-    .bioTitle {
-      font-family: 'Nixie One', cursive;
-      color: #66FCF1;
+  }
+
+  .bioTitle {
+      font-family: 'Lato', sans-serif;
+      color: #191970;
       text-align: center;
       font-size: 24px;
       text-decoration: underline;
       margin-top: 100px;
-    }
-  
-    .bioParaOne, .bioParaTwo {
-      font-family: 'Libre Baskerville', serif;
-      color: #E1E2E2;
+  }
+
+  .bioParaOne, .bioParaTwo {
+    font-family: 'Roboto', sans-serif;
+      color: #000000;
       margin-left: 10px;
       margin-right: 10px;
       padding-left: 2px;
       padding-right: 2px;
       font-size: 20px;
       line-height: 30px;
-    }
-  
-    .projTitle {
-      font-family: 'Nixie One', cursive;
-      color: #66FCF1;
+  }
+
+  .projTitle {
+      font-family: 'Lato', sans-serif;
+      color: #000000;
       text-align: center;
       font-size: 24px;
       text-decoration: underline;
       margin-top: 100px;
-    }
-  
-    #projectOne{
+  }
+
+  #projectOne{
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-  
-    #projectTwo{
+  }
+
+  #projectTwo{
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-  
-    .projName{
-      font-family: 'Libre Baskerville', serif;
-      color: #E1E2E2;
+  }
+
+  .projName{
+      font-family: 'Lato', sans-serif;
+      color: #000000;
       margin-left: 10px;
       margin-right: 10px;
       padding-left: 2px;
       padding-right: 2px;
       font-size: 20px;
-    }
-  
-    #hockeyQuizApp {
+  }
+
+  #hockeyQuizApp {
       width: 300px;
       height: 150px;
       margin-right: auto;
       margin-left: auto;
       padding-left: 2px;
       padding-right: 2px;
-    }
-  
-    #metalDiscoveryApp {
+  }
+
+  #metalDiscoveryApp {
       width: 300px;
       height: 150px;
       margin-right: auto;
       margin-left: auto;
       padding-left: 2px;
       padding-right: 2px;
-    }
-  
-    .links{
-      color: #66FCF1;
+  }
+
+  .links{
+      color: #4682B4;
       margin-left: 70px;
       margin-right: 30px;
       text-align: center;
       font-size: 18px;
-    }
-  
-  
-    .techDescrip {
-      font-family: 'Libre Baskerville', serif;
-      color: #66FCF1;
+  }
+
+
+  .techDescrip {
+    font-family: 'Roboto', sans-serif;
+      color: #708090;
       margin-left: 10px;
       margin-right: 10px;
       padding-left: 2px;
       padding-right: 2px;
       font-size: 20px;
-    }
-  
-    .projDescrip {
-      font-family: 'Libre Baskerville', serif;
-      color: #E1E2E2;
+  }
+
+  .projDescrip {
+      font-family: 'Roboto', sans-serif;
+      color: #000000;
       margin-left: 10px;
       margin-right: 10px;
       padding-left: 2px;
       padding-right: 2px;
       font-size: 20px;
       line-height: 30px;
-    }
-  
-    .contact{
-      font-family: 'Nixie One', cursive;
-      color: #66FCF1;
+  }
+
+  .contact{
+      background-color: #778899;
+      font-size: 20px;
+      font-family: 'Lato', sans-serif;
+      color: #000000;
       text-align: center;
-      font-size: 22px;
       text-decoration: underline;
       margin-top: 200px;
-    }
-  
-    .info {
-      font-family: 'Libre Baskerville', serif;
-      color: #66FCF1;
+  }
+
+  .info {
+      font-family: 'Lato', sans-serif;
+      color: #191970;
       text-align: center;
       font-size: 18px;
-    }
-  
-    .social {
+  }
+
+  .social {
       height: 50px;
       width: 55px;
       margin-right: 20px;
-      background-color: #45A29E;
+      background-color: #ffffff;
       margin-top: -20px;
       text-decoration: none;
-    }
-  
-  
   }
-  
+}
